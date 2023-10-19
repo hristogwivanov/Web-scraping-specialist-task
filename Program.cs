@@ -29,7 +29,7 @@ static List<Product> ParseProductsFromHtml(string html)
 
     var productNameRegex = new Regex(@"<h4><a[^>]*>([^<]*)</a></h4>");
     var priceRegex = new Regex(@"<span[^>]*>\$([^<]*)</span>");
-    var ratingRegex = new Regex(@"rating = ""([^""]*)");
+    var ratingRegex = new Regex(@"rating\s*=\s*""([^""]*)");
 
     var productNameMatches = productNameRegex.Matches(html);
     var priceMatches = priceRegex.Matches(html);
