@@ -25,7 +25,7 @@ catch (Exception e)
 
 static List<Product> ParseProductsFromHtml(string html)
 {
-    List<Product> products = new List<Product>();
+    List<Product> products = new();
 
     var productNameRegex = new Regex(@"<h4><a[^>]*>([^<]*)</a></h4>");
     var priceRegex = new Regex(@"<span[^>]*>\$([^<]*)</span>");
