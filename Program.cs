@@ -55,7 +55,7 @@ static List<Product> ParseProductsFromHtml(string html)
 
 class Product
 {
-    public string productName { get; set; }
-    public string price { get; set; }
-    public string rating { get; set; }
+    public string? productName { get; set; }
+    public string? price { get; set; }
+    public string? rating { get; set; }
 }
